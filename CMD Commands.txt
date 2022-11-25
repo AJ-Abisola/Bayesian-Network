@@ -1,0 +1,18 @@
+Task 1a - run this
+python "1a - NaiveBayes.py" heart-data-discretized-train.csv heart-data-discretized-test.csv
+python "1a - NaiveBayes.py" stroke-data-discretized-train.csv stroke-data-discretized-test.csv
+
+
+Task 1b - Inference
+To generate cpts
+python ImplementedCPTgen.py stroke-data-discretized-train.csv stroke_file-structure.txt my_cpt.txt
+
+python 1b-ApproximateInference.py heart-data-discretized-train.csv heart-data-discretized-test.csv heart_file-cpt.txt heart_file-structure.txt "target|sex=0,cp=3" 10000
+python 1b-ApproximateInference.py stroke-data-discretized-train.csv stroke-data-discretized-test.csv stroke_file-cpt.txt stroke_file-structure.txt "stroke|age=2,gender=Female,smoking_status=smokes" 10000
+
+Task 1b - Structure Learning
+python StructureTests.py
+
+Task 1c
+python 1c-GaussianNB.py heart-data-discretized-train.csv heart-data-discretized-test.csv
+python 1c-GaussianNB.py heart-data-original-train.csv heart-data-original-test.csv
