@@ -1,0 +1,14 @@
+target
+thalach|target
+chol|target
+restecg|chol
+thal|target,thalach
+fbs|thal
+slope|target,thalach,chol,restecg
+oldpeak|slope,thalach
+sex|restecg,slope,chol
+cp|target,slope,thal,restecg
+age|target,thal,fbs,slope
+ca|target,thalach,oldpeak,fbs,age
+exang|target,sex,restecg,age,fbs,thal,thalach
+trestbps|target,cp,thal,thalach,oldpeak,restecg,chol,age
