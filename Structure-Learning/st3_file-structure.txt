@@ -1,0 +1,11 @@
+heart_disease
+gender|heart_disease
+work_type|heart_disease
+Residence_type|heart_disease
+stroke|heart_disease,hypertension
+age|heart_disease,stroke,work_type
+ever_married|age
+hypertension|heart_disease,work_type,age
+bmi|age,hypertension
+avg_glucose_level|heart_disease,age,stroke,gender
+smoking_status|heart_disease,avg_glucose_level,ever_married,Residence_type,stroke,gender,age,hypertension
